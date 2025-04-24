@@ -1,0 +1,33 @@
+:root {
+  --main-purple: rgb(100, 0, 145);
+  --background-purple: rgba(100, 0, 145, 0.5);
+  --dark-purple: rgb(20, 0, 20);
+
+  --link-white: rgb(190, 190, 190);
+}
+
+body {
+    /* Font and text details */
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 12pt;
+    color: white;
+  
+    /* Background animaion */
+    background-color: var(--dark-purple);
+    background-image: linear-gradient(45deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%),
+                      linear-gradient(135deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%);
+    background-size: 55px 55px;
+    animation: moveBg 4s linear infinite;
+
+    padding-left: 25%;
+    padding-right: 25%;
+}
+  
+@keyframes moveBg {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 55px 55px;
+    }
+}

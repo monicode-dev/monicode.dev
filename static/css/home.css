@@ -1,0 +1,45 @@
+/* main {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+
+  display: grid;
+  place-items: center;
+  height: 90vh;
+}
+
+#abtMeText {
+  text-align: left;
+  margin-top: 0;
+}
+
+#navButtons {
+  padding-top: 10px;
+}
+
+#navButtons a {
+  font-family: "Ubuntu Mono", monospace;
+
+  padding: 0.6em 1em;
+  border: 2px solid rgb(120, 0, 120);
+  transition: ease-in-out 0.2s;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+
+  text-decoration: none;
+}
+
+#navButtons a:hover {
+  border: 2px solid rgb(100, 0, 100);
+} */
+
+main {
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+  color: gray;
+}

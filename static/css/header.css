@@ -1,0 +1,47 @@
+header {
+    display: grid;
+    grid-template-columns: auto max-content;
+
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--link-white);
+
+    transition: ease-in-out 0.2s;
+    margin-left: 1.2rem;
+}
+
+nav a:hover {
+    color: white;
+}
+
+#headerHomeLink {
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content auto;
+
+    text-decoration: none;
+}
+
+#headerHomeLink img {
+    margin-right: 10px;
+}
+
+#headerHomeLink p {
+    font-size: 20px;
+    color: white;
+}
+
+.svg {
+    width: 20px;
+    vertical-align: middle;
+
+    filter: invert(75%);
+    transition: ease-in-out 0.2s;
+}
+
+.svg:hover {
+    filter: invert(100%);
+}
