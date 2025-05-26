@@ -37,6 +37,6 @@ app.get("/projects", (req, res) => {
 	});
 });
 
-app.listen(5000, () => {
+app.listen(1100, () => {
   	console.log("Sever up! Visit https://monicode.dev/")
 })
