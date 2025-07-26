@@ -19,8 +19,25 @@ body {
     background-size: 55px 55px;
     animation: moveBg 4s linear infinite;
 
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 30%;
+    padding-right: 30%;
+
+    margin: 0;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: min-content auto min-content;
+
+  background-color: rgba(20, 0, 20, 0.75);
+  border-radius: 20px;
+  padding: 0% 5% 0% 5%;
+
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+
+  height: 98vh;
 }
   
 @keyframes moveBg {
@@ -29,5 +46,32 @@ body {
     }
     100% {
       background-position: 55px 55px;
+    }
+}
+
+@media (max-width: 1600px) {
+    body {
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+      padding: 0;
+      font-size: 11pt;
+    }
+
+    #content {
+      margin: 0;
+      border-radius: 0;
+      height: 100vh;
     }
 }

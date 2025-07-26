@@ -3,16 +3,21 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>MoniCode | {{blogName}}</title>
+    <title>MoniCode | {{prettyBlogName blogName}}</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/universal.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/blog-page.css">
 </head>
 <body>
-    {{> header}}
+    <div id="content">
+        {{> header}}
 
-    {{{body}}}
+        {{{body}}}
 
-    {{> footer}}
+        {{> footer}}
+    </div>
+    <script src="/js/overflowFix.js"></script>
 </body>
 </html>
