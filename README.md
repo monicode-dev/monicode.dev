@@ -1,3 +1,3 @@
 
 # monicode.dev
-A digital portfolio and blog website!
+This is the MoniCode portfolio + blog website code!
