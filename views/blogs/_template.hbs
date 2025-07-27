@@ -34,7 +34,7 @@
             <li>maur</li>
         </ol>
         {{!-- Start of code snippet --}}
-        <pre><code>document.onreadystatechange = () => {
+        <pre><code class="language-js">document.onreadystatechange = () => {
     if (document.readyState === "complete") {
         const content = document.getElementById("content");
 
@@ -43,6 +43,30 @@
         }
     }
 };</code></pre>
+<pre><code class="lang-css">:root {
+  --main-purple: rgb(100, 0, 145);
+  --background-purple: rgba(100, 0, 145, 0.5);
+  --dark-purple: rgb(20, 0, 20);
+
+  --link-white: rgb(190, 190, 190);
+}</code></pre>
+<pre><code class="lang-rust">use rcgen::{Certificate, CertificateParams, DnType};
+use tokio_rustls::rustls;
+
+let mut cert_params = CertificateParams::new(vec![HOSTNAME.to_string()]);
+cert_params
+    .distinguished_name
+    .push(DnType::CommonName, HOSTNAME);
+
+let cert = Certificate::from_params(cert_params).unwrap();
+
+let public_key = new_cert.serialize_der().unwrap();
+let private_key = new_cert.serialize_private_key_der();
+
+let cert = rustls::Certificate(public_key);
+let private_key = rustls::PrivateKey(private_key);</code></pre>
+
+
         {{!-- End of code snippet --}}
         <blockquote>
             Im am verry silly. 

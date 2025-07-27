@@ -1,4 +1,4 @@
-.chip {
+/* .chip {
   padding: 0.6em 1em;
   line-height: 150%;
 
@@ -13,13 +13,17 @@
 
 .chip:hover {
   border: 2px solid rgb(100, 0, 100);
-}
+} */
 
 main {
   margin-top: 10px;
 }
 
-.link {
-  color: white;
-  padding: 1px;
+code {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 12pt;
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 5px;
+  background: rgb(25, 25, 25);
+  line-height: 1.4em;
 }

@@ -34,10 +34,7 @@ body {
   border-radius: 20px;
   padding: 0% 5% 0% 5%;
 
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-
-  height: 98vh;
+  height: 100vh;
 }
   
 @keyframes moveBg {
@@ -74,4 +71,14 @@ body {
       border-radius: 0;
       height: 100vh;
     }
+}
+
+a {
+  color: var(--link-white);
+
+  transition: ease-in-out 0.2s;
+}
+
+a:hover {
+  color: white;
 }

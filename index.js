@@ -32,6 +32,13 @@ app.get("/", (req, res) => {
 	});
 });
 
+app.get("/setup", (req, res) => {
+	res.render("setup", {
+		pageName: "Setup",
+		pageId: "setup",
+	});
+});
+
 app.get("/blogs", (req, res) => {
 	res.render("blogs", {
 		pageName: "Blogs",
