@@ -27,3 +27,7 @@ code {
   background: rgb(25, 25, 25);
   line-height: 1.4em;
 }
+
+.email-contact:hover::before {
+  content: "mailto:";
+}
