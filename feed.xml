@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"
+  xml:base="https://monicode.dev">
+  <title>MoniCode's Blog</title>
+  <subtitle>Life updates from MoniCode</subtitle>
+  <link href="https://monicode.dev/feed.xml" rel="self" />
+  <link href="https://monicode.dev" />
+  <updated>2025-07-27T00:00:00Z</updated>
+  <id>https://monicode.dev</id>
+  <author>
+    <name>Monika Eve Cervantes</name>
+    <email>monika@monicode.dev</email>
+  </author>
+  <entry>
+    <title>Test</title>
+    <summary>maur</summary>
+    <link href="https://monicode.dev/blogs/_template" />
+    <updated>2025-07-27T00:00:00Z</updated>
+    <id>https://monicode.dev/blogs/_template</id>
+    <content type="html">
+      <![CDATA[
+        <p>In the begining of most blog posts, I will put a short 1-2 paragrah hook like matdoesdev does <a class="link"
+                href="https://matdoes.dev/minecraft-uuids">here</a></p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p>Lorem <s>ipsum</s> dolor sit, amet <b>consectetur</b> <b><i>adipisicing</i></b> <i>elit.</i> Voluptatem fugit
+            reiciendis debitis tenetur,
+            excepturi
+            dolores dignissimos consequuntur cum aut. Assumenda, et debitis velit in repellendus laborum consequatur sed
+            unde neque?</p>
+
+        <img src="/images/logo.png" alt="MoniCode Logo">
+
+        <ul>
+            <li>Yo</li>
+            <li>Yo</li>
+            <li>Yo</li>
+        </ul>
+        <ol>
+            <li>maur</li>
+            <li>maur</li>
+            <li>maur</li>
+        </ol>
+        {{!-- Start of code snippet --}}
+        <pre><code class="language-js">document.onreadystatechange = () => {
+    if (document.readyState === "complete") {
+        const content = document.getElementById("content");
+
+        if (content.scrollHeight > content.clientHeight) {
+            content.style.height = "100%";
+        }
+    }
+};</code></pre>
+<pre><code class="lang-css">:root {
+  --main-purple: rgb(100, 0, 145);
+  --background-purple: rgba(100, 0, 145, 0.5);
+  --dark-purple: rgb(20, 0, 20);
+
+  --link-white: rgb(190, 190, 190);
+}</code></pre>
+<pre><code class="lang-rust">use rcgen::{Certificate, CertificateParams, DnType};
+use tokio_rustls::rustls;
+
+let mut cert_params = CertificateParams::new(vec![HOSTNAME.to_string()]);
+cert_params
+    .distinguished_name
+    .push(DnType::CommonName, HOSTNAME);
+
+let cert = Certificate::from_params(cert_params).unwrap();
+
+let public_key = new_cert.serialize_der().unwrap();
+let private_key = new_cert.serialize_private_key_der();
+
+let cert = rustls::Certificate(public_key);
+let private_key = rustls::PrivateKey(private_key);</code></pre>
+
+
+        {{!-- End of code snippet --}}
+        <blockquote>
+            Im am verry silly. 
+        </blockquote>
+      ]]>
+    </content>
+  </entry>
+</feed>

@@ -1,5 +1,6 @@
 const express = require("express");
 const handlebars = require("express-handlebars");
+const path = require("node:path")
 
 const app = express();
 
@@ -47,13 +48,17 @@ app.get("/blogs", (req, res) => {
 });
 
 app.get("/blogs/:blogName", async (req, res) => {
-	if ((await hbs.getTemplates("./views"))["blogs/" + req.params.blogName + ".hbs"]) {
+	if (
+		(await hbs.getTemplates("./views"))[
+			"blogs/" + req.params.blogName + ".hbs"
+		]
+	) {
 		res.render("blogs/" + req.params.blogName, {
 			blogName: req.params.blogName,
 			layout: "blog-page",
 		});
 	} else {
-		res.redirect("/blogs")
+		res.redirect("/blogs");
 	}
 });
 
@@ -62,6 +67,14 @@ app.get("/projects", (req, res) => {
 		pageName: "Projects",
 		pageId: "projects",
 	});
+});
+
+app.get("/feed.xml", (req, res) => {
+	const options = {
+		root: path.join(__dirname),
+	};
+
+	res.sendFile("feed.xml", options);
 });
 
 app.use((req, res) => {
