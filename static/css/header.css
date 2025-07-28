@@ -7,7 +7,7 @@ header {
 
 nav a {
     text-decoration: none;
-    color: var(--link-white);
+    color: rgb(190, 190, 190);
 
     transition: ease-in-out 0.2s;
     margin-left: 1.2rem;
@@ -32,10 +32,6 @@ nav a:hover {
 #headerHomeLink p {
     font-size: 20px;
     color: white;
-}
-
-.header-link {
-    color: rbg(190, 190, 190)
 }
 
 .svg {
