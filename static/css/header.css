@@ -45,10 +45,14 @@ nav a:hover {
     transition: ease-in-out 0.2s;
 }
 
-.svg-gh:hover {
-    content:url("/images/github-white.svg");
+.svg {
+    width: 20px;
+    vertical-align: middle;
+
+    filter: invert(75%);
+    transition: ease-in-out 0.2s;
 }
 
-.svg-bsky:hover {
-    content:url("/images/bluesky-white.svg");
+.svg:hover {
+    filter: invert(100%);
 }
