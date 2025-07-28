@@ -42,10 +42,10 @@ nav a:hover {
     width: 20px;
     vertical-align: middle;
 
-    filter: invert(75%);
+    /* filter: invert(75%); */
     transition: ease-in-out 0.2s;
 }
 
 .svg:hover {
-    filter: invert(100%);
+    filter: brightness(0) invert(100%);
 }
