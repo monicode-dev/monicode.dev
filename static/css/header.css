@@ -42,10 +42,13 @@ nav a:hover {
     width: 20px;
     vertical-align: middle;
 
-    /* filter: invert(75%); */
     transition: ease-in-out 0.2s;
 }
 
-.svg:hover {
-    filter: brightness(0) invert(100%);
+.svg-gh:hover {
+    content:url("/images/github-white.svg");
+}
+
+.svg-bsky:hover {
+    content:url("/images/bluesky-white.svg");
 }
