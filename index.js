@@ -1,6 +1,6 @@
 const express = require("express");
 const handlebars = require("express-handlebars");
-const path = require("node:path")
+const path = require("node:path");
 
 const app = express();
 
@@ -10,10 +10,14 @@ const hbs = handlebars.create({
 		css(aString) {
 			return `css/${aString}-css`;
 		},
-		prettyBlogName(aString) {
-			return aString.toLowerCase().split("-").map(function (word) {
-				return word[0].toUpperCase() + word.substr(1);
-			}).join(" ");
+		prettyBlogName(blogId, options) {
+			if (options.blogName) {
+				return options.blogName;
+			} else {
+				return blogId.split("-").map(function (word) {
+					return word[0].toUpperCase() + word.substr(1);
+				}).join(" ");
+			}
 		},
 	},
 });
@@ -47,16 +51,17 @@ app.get("/blogs", (req, res) => {
 	});
 });
 
-app.get("/blogs/:blogName", async (req, res) => {
-	if (
-		(await hbs.getTemplates("./views"))[
-			"blogs/" + req.params.blogName + ".hbs"
-		]
-	) {
-		res.render("blogs/" + req.params.blogName, {
-			blogName: req.params.blogName,
+app.get("/blogs/:blogId", async (req, res) => {
+	const template = (await hbs.getTemplates("./views"))["blogs/" + req.params.blogId + ".hbs"]
+	if (template) {
+		let options = {
+			blogId: req.params.blogId,
 			layout: "blog-page",
-		});
+		}
+		
+		if (options.blogId === "_template") options.blogName = "Template blog"
+
+		res.render("blogs/" + req.params.blogId, options);
 	} else {
 		res.redirect("/blogs");
 	}
@@ -74,7 +79,7 @@ app.get("/feed.xml", (req, res) => {
 		root: path.join(__dirname),
 	};
 
-	res.sendFile("feed.xml", options);
+	res.sendFile("static/feed.xml", options);
 });
 
 app.use((req, res) => {
@@ -82,5 +87,5 @@ app.use((req, res) => {
 });
 
 app.listen(1100, () => {
-	console.log("Sever up! Visit https://monicode.dev/");
+	console.log("Server up! Visit https://monicode.dev/");
 });
