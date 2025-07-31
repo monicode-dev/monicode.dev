@@ -59,7 +59,8 @@ app.get("/blogs/:blogId", async (req, res) => {
 			layout: "blog-page",
 		}
 		
-		if (options.blogId === "_template") options.blogName = "Template blog"
+		if (options.blogId === "_template") options.blogName = "Template Blog"
+		if (options.blogId === "home-dlc") options.blogName = "The Home Page DLC"
 
 		res.render("blogs/" + req.params.blogId, options);
 	} else {

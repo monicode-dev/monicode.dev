@@ -31,8 +31,6 @@ body {
 
   background-color: rgba(20, 0, 20, 0.75);
   padding: 0% 5% 0% 5%;
-
-  height: 100vh;
 }
   
 @keyframes moveBg {
@@ -87,4 +85,13 @@ a:hover {
 
 .so:hover:after {
   content: 'shoruoti'
+}
+
+code:not(pre > code) {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 12pt;
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 5px;
+  background: rgb(25, 25, 25);
+  line-height: 1.4em;
 }
