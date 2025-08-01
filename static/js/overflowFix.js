@@ -9,5 +9,4 @@ function overflowFix() {
     }
 }
 
-window.addEventListener("resize", overflowFix);
 document.addEventListener("readystatechange", overflowFix)
