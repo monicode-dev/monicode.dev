@@ -19,12 +19,6 @@
     <id>https://monicode.dev/blogs/home-dlc</id>
     <content type="html"><![CDATA[
       <main>
-        <div id="article-header">
-            <h1 id="title">{{prettyBlogName blogId this}}</h1>
-            <h4 id="subtitle">The first blog post!</h4>
-            <p id="date"><em>Jul 31, 2025 | 604 words</em></p>
-            <hr>
-        </div>
         <article>
             <p>
                 Welcome to my first blog post to this website of mine. I will be building on the information present in the
