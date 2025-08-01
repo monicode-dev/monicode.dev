@@ -5,10 +5,89 @@
   <subtitle>Life updates from MoniCode</subtitle>
   <link href="https://monicode.dev/feed.xml" rel="self" />
   <link href="https://monicode.dev" />
-  <updated>2025-07-27T00:00:00Z</updated>
+  <updated>2025-07-31T00:00:00Z</updated>
   <id>https://monicode.dev</id>
   <author>
     <name>Monika Eve Cervantes</name>
     <email>monika@monicode.dev</email>
   </author>
+  <entry>
+    <title>The Home Page DLC</title>
+    <summary>My first blog post!</summary>
+    <link href="https://monicode.dev/blogs/home-dlc" />
+    <updated>2025-07-31T00:00:00Z</updated>
+    <id>https://monicode.dev/blogs/home-dlc</id>
+    <content type="html"><![CDATA[
+      <main>
+        <div id="article-header">
+            <h1 id="title">{{prettyBlogName blogId this}}</h1>
+            <h4 id="subtitle">The first blog post!</h4>
+            <p id="date"><em>Jul 31, 2025 | 604 words</em></p>
+            <hr>
+        </div>
+        <article>
+            <p>
+                Welcome to my first blog post to this website of mine. I will be building on the information present in the
+                <a href="/">home page</a>, so I suggest you read it. Think of it this way, if my home page is the intro,
+                this is the full documentary to know everything you need to know about me.
+            </p>
+            <h2>Being Queer</h2>
+            <p>
+                I feel placing myself into a box as if I perfectly fit into it is lying. So I don't use labels quite as
+                "labels", more like descriptors (but that's a discussion for another post).
+            </p>
+            <p>
+                With that said, I would describe myself as a transgender individual who uses she/they pronouns. As for my
+                sexual and romantic attraction, I don't really mind gender, sex or amount of partners. If I have a
+                preference and what it is depends on when you ask.
+            </p>
+            <h2>Schooling</h2>
+            <p>
+                I am currently going into my senior/last year of high school, yippee! Over the last 3 years, I've taken
+                every computer related class I could get. In fact, I have taken almost every class the school district has
+                to offer and I could get a certificate of proficiency if I pass the final class in the series this year.
+                Other than that class, I only need to finish off my English class credit to graduate. With all the spare
+                class slots I have, I plan to be a teacher assistant for the only computer science teacher in the school.
+            </p>
+            <p>
+                After high school, I want to go to the nearby university and get a degree in computer science. I will
+                probably just get my bachelor's degree, but if things work in my favor, I might even pursue my master's.
+            </p>
+            <h2>Programming Experience</h2>
+            <p>
+                The summer before 7th grade (about 5 years ago), I asked myself and the internet "how do you make a Discord
+                bot?". After some searching, I found <a href="https://www.youtube.com/@CodeLyon">CodeLyon's Channel</a> and
+                was introduced to programming, more specifically NodeJS. At the time, I was DEEP into <a
+                    href="https://www.urbandictionary.com/define.php?term=Tutorial%20Hell">tutorial hell</a>, but over time
+                I learned to experiment, not just copy & paste code from videos. I stuck with NodeJS till my 10th grade
+                year, when I took Intro to Computer Science and Game Development where I did some light web development and
+                played some with Unity.
+            </p>
+            <p>
+                It wasn't till last year (11th grade) that I started taking programming seriously and considered it as a
+                career option. This is when I took Advanced Computer Programming, and it was boring as hell. The series of
+                computer science courses offered at my high school are pretty copy and paste, and it shows here. Anyhow, I
+                was taught Python formally in this class and got a chance to tamper with Java for my final project (my
+                teacher saw potential and gave me a harder final). This year, I will be taking a class going over <a
+                    href="https://www.w3schools.com/dsa/index.php">DSA</a> in C++. Then, with that under my belt, I want to
+                try and learn Rust and all the low level programming philosophies.
+            </p>
+            <p>
+                I forgot web development.
+            </p>
+            <p>
+                Those skills are mostly self taught other than some good design and industry practices from my Intro to Web
+                Development class.
+            </p>
+            <h2>Last Words</h2>
+            <p>
+                I hope you found at least some part of this post interesting. As for my next post, I don't have a good topic
+                yet, other than my monthly post (scheduled for early September). If you want to submit a topic idea, DM me
+                on Discord at <code>monicode.dev</code> or email me at <code><a href="mailto:monika@monicode.dev">monika@monicode.dev</a></code>. Have a good
+                one, and thanks for reading!
+            </p>
+        </article>
+      </main>
+    ]]></content>
+  </entry>
 </feed>
