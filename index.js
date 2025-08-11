@@ -83,14 +83,6 @@ app.get("/feed.xml", (req, res) => {
 	res.sendFile("static/feed.xml", options);
 });
 
-app.get("/ads.txt", (req, res) => {
-	const options = {
-		root: path.join(__dirname),
-	};
-
-	res.sendFile("static/ads.txt", options);
-});
-
 app.use((req, res) => {
 	res.redirect("/");
 });
