@@ -1,13 +1,13 @@
 <main>
     <div id="article-header">
-        <h1 id="title">{{prettyBlogName blogId this}}</h1>
+        <h1 id="title">Template Blog</h1>
         <h4 id="subtitle">This is for testing</h4>
         <p id="date"><em>Jul 26, 2025</em></p>
         <hr>
     </div>
     <article>
-        <p>In the begining of most blog posts, I will put a short 1-2 line paragraph hook like matdoesdev does <a class="link"
-                href="https://matdoes.dev/minecraft-uuids">here</a></p>
+        <p>In the begining of most blog posts, I will put a short 1-2 line paragraph hook like matdoesdev does <a
+                class="link" href="https://matdoes.dev/minecraft-uuids">here</a></p>
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
@@ -19,6 +19,8 @@
             excepturi
             dolores dignissimos consequuntur cum aut. Assumenda, et debitis velit in repellendus laborum consequatur sed
             unde neque?</p>
+
+        <img src="/images/saturn.jpg" alt="A red, sun damaged 2001 Saturn L200">
 
         <img src="/images/logo.png" alt="MoniCode Logo">
 
@@ -42,14 +44,14 @@
         }
     }
 };</code></pre>
-<pre><code class="lang-css">:root {
+        <pre><code class="lang-css">:root {
   --main-purple: rgb(100, 0, 145);
   --background-purple: rgba(100, 0, 145, 0.5);
   --dark-purple: rgb(20, 0, 20);
 
   --link-white: rgb(190, 190, 190);
 }</code></pre>
-<pre><code class="lang-rust">use rcgen::{Certificate, CertificateParams, DnType};
+        <pre><code class="lang-rust">use rcgen::{Certificate, CertificateParams, DnType};
 use tokio_rustls::rustls;
 
 let mut cert_params = CertificateParams::new(vec![HOSTNAME.to_string()]);
@@ -68,7 +70,7 @@ let private_key = rustls::PrivateKey(private_key);</code></pre>
 
         {{!-- End of code snippet --}}
         <blockquote>
-            Im am verry silly. 
+            Im am verry silly.
         </blockquote>
     </article>
 </main>
