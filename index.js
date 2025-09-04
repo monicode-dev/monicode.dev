@@ -9,16 +9,7 @@ const hbs = handlebars.create({
 	helpers: {
 		css(aString) {
 			return `css/${aString}-css`;
-		},
-		prettyBlogName(blogId, options) {
-			if (options.blogName) {
-				return options.blogName;
-			} else {
-				return blogId.split("-").map(function (word) {
-					return word[0].toUpperCase() + word.substr(1);
-				}).join(" ");
-			}
-		},
+		}
 	},
 });
 
@@ -58,9 +49,6 @@ app.get("/blogs/:blogId", async (req, res) => {
 			blogId: req.params.blogId,
 			layout: "blog-page",
 		}
-		
-		if (options.blogId === "_template") options.blogName = "Template Blog"
-		if (options.blogId === "home-dlc") options.blogName = "The Home Page DLC"
 
 		res.render("blogs/" + req.params.blogId, options);
 	} else {

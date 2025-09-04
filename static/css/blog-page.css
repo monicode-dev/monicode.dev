@@ -18,6 +18,7 @@ article img {
     max-height: 25em;
 
     display: block;
+    border-radius: 10px;
 }
 
 blockquote::before, blockquote::after{
