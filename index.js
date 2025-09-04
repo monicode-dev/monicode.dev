@@ -75,6 +75,14 @@ app.get("/projects", (req, res) => {
 	});
 });
 
+app.get("/recommends", (req, res) => {
+	console.log(req.query)
+	res.render("recommends", {
+		pageName: "Recomends",
+		pageId: "recommends",
+	});
+});
+
 app.get("/feed.xml", (req, res) => {
 	const options = {
 		root: path.join(__dirname),

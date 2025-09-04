@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border-bottom: 2px solid var(--link-white);
+    border-collapse: collapse;
+}
+
+.rec-nav a {
+    background: var(--dark-purple);
+    padding: 0.25em;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.rec-nav a.active {
+    background: var(--background-purple);
+    padding: 0.25em;
+    border-radius: 10px;
+}
+
+.rec-nav {
+    margin-bottom: 1em;
+}
