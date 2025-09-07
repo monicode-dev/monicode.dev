@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"
-  xml:base="https://monicode.dev">
-  <title>MoniCode's Blog</title>
-  <subtitle>Life updates from MoniCode</subtitle>
-  <link href="https://monicode.dev/feed.xml" rel="self" />
-  <link href="https://monicode.dev" />
-  <updated>2025-07-31T00:00:00Z</updated>
-  <id>https://monicode.dev</id>
-  <author>
-    <name>Monika Eve Cervantes</name>
-    <email>monika@monicode.dev</email>
-  </author>
-  <entry>
-    <title>The Home Page DLC</title>
-    <summary>My first blog post!</summary>
-    <link href="https://monicode.dev/blogs/home-dlc" />
+    xml:base="https://monicode.dev">
+    <title>MoniCode's Blog</title>
+    <subtitle>Life updates from MoniCode</subtitle>
+    <link href="https://monicode.dev/feed.xml" rel="self" />
+    <link href="https://monicode.dev" />
     <updated>2025-07-31T00:00:00Z</updated>
-    <id>https://monicode.dev/blogs/home-dlc</id>
-    <content type="html"><![CDATA[
+    <id>https://monicode.dev</id>
+    <author>
+        <name>Monika Eve Cervantes</name>
+        <email>monika@monicode.dev</email>
+    </author>
+    <entry>
+        <title>The Home Page DLC</title>
+        <summary>My first blog post!</summary>
+        <link href="https://monicode.dev/blogs/home-dlc" />
+        <updated>2025-07-31T00:00:00Z</updated>
+        <id>https://monicode.dev/blogs/home-dlc</id>
+        <content type="html"><![CDATA[
       <main>
         <article>
             <p>
@@ -83,5 +83,62 @@
         </article>
       </main>
     ]]></content>
-  </entry>
+    </entry>
+
+    <entry>
+        <title>September's Monthly Post</title>
+        <summary>My monthly post for September</summary>
+        <link href="https://monicode.dev/blogs/sep-post" />
+        <updated>2025-09-06T13:00:00Z</updated>
+        <id>https://monicode.dev/blogs/sep-post</id>
+        <content type="html"><![CDATA[
+            <main>
+                <div id="article-header">
+                    <h1 id="title">September's Monthly Post</h1>
+                    <h4 id="subtitle">My monthly post for September</h4>
+                    <p id="date"><em>Sep 06, 2025 | 514 words</em></p>
+                    <hr>
+                </div>
+                <article>
+                    <p>Welcome to my monthly post for September! This is my status update post where I talk about where I&#39;ve
+                        been, what I&#39;ve done, and/or what I&#39;ve learned in the last month. So lets get into it with my
+                        <strong>biggest</strong> news...
+                    </p>
+                    <h2 id="getting-my-license-">Getting my license!</h2>
+                    <p>I <strong>officially</strong> got my license and my car registered! About two weeks ago I got my plates for
+                        my car and about a week ago I got the actual card for my license. <em>However</em>, there is still some work
+                        to be done. You see, I got an old <a href="https://en.wikipedia.org/wiki/Saturn_L-Series">2001 Saturn L200
+                        </a> <sup>(a.k.a. LS1)</sup> that has driven over 200,000 miles over it&#39;s life time. Owning that old
+                        and that used of a car requires some maintenance. As you can see below, it&#39;s not the best cosmetically:
+                        sun damaged paint, no hood emblem (the new one just came in the mail), cracked windshield, no hub caps, etc.
+                    </p>
+                    <img src="/images/saturn.jpg" alt="A red, sun damaged 2001 Saturn L200">
+                    <p>
+                        Mechanically, it has a 4-cylinder 2.2 L engine (translation: small engine and no get-up-and-go). It
+                        currently has no AC and some regular maintenance here and there is a little over due. However, I&#39;m not
+                        going in completely blind. My mother used to work on her old &#39;99 Jeep and my father still maintains his
+                        car. Adding on, I&#39;m also taking my school&#39;s Intro to Automotive class next semester. With all that
+                        said, I&#39;d say I did really good with my first car. I&#39;m hoping to learn a lot from owning an older
+                        car that requires a little bit of love and care. On the topic of learning...</p>
+                    <h2 id="school-has-started-for-me">School has started for me</h2>
+                    <p>Unfortunately, I now have to go to school (hence why this post is being posted later than I wanted). Luckily,
+                        I don&#39;t have much this first semester. My school operates on an A/B day schedule. My A days are pretty
+                        boring, only teacher assistant work and study hall. But my B days are where all the fun is. I have a class
+                        on Network Fundamentals and Computer Systems. Unfortunately, I don&#39;t get to do <a
+                            href="https://www.w3schools.com/dsa/index.php">DSA</a> till next semester :(</p>
+                    <h2 id="misc">Misc</h2>
+                    <p>As for miscellaneous news, I am trying Arch Linux again, this time on my Thinkpad T495. I got inspired by my
+                        friend, <a href="https://www.ztchary.net/">ztchary</a>, to work on a rice setup. Once I&#39;ve made some
+                        good progress or I finish it, there may be an update post on it if I don&#39;t decide to wait till the next
+                        monthly post.
+                        Lastly, I got promoted at my job to be shift lead! It also comes with a nice $2.35 pay bump, but also, more
+                        responsibilities (more explanation to the lateness of this post).</p>
+                    <h2 id="last-words">Last Words</h2>
+                    <p>Thanks for reading to the end! Like always, I hope you found some of this interesting. As said before, I plan
+                        on making an update post to the Arch Linux rice. If I don&#39;t before the beginning of October, then
+                        I&#39;ll see you for the next monthly post! I love y&#39;all and have a good one! </p>
+                </article>
+            </main>
+        ]]></content>
+    </entry>
 </feed>
