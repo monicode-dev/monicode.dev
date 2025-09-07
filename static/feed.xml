@@ -93,12 +93,6 @@
         <id>https://monicode.dev/blogs/sep-post</id>
         <content type="html"><![CDATA[
             <main>
-                <div id="article-header">
-                    <h1 id="title">September's Monthly Post</h1>
-                    <h4 id="subtitle">My monthly post for September</h4>
-                    <p id="date"><em>Sep 06, 2025 | 514 words</em></p>
-                    <hr>
-                </div>
                 <article>
                     <p>Welcome to my monthly post for September! This is my status update post where I talk about where I&#39;ve
                         been, what I&#39;ve done, and/or what I&#39;ve learned in the last month. So lets get into it with my
