@@ -42,7 +42,23 @@ body {
 }
 
 main {
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 0, 145, 0.25);
+  border-radius: 10px;
 }
 
 @keyframes moveBg {
