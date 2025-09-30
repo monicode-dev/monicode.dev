@@ -9,6 +9,8 @@
   "author": "monika@monicode.dev",
   "license": "MIT",
   "dependencies": {
+    "dayjs": "^1.11.18",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3",
     "sequelize": "^6.37.7",

@@ -1,0 +1,136 @@
+@import url("https://fontsapi.zeoseven.com/442/main/result.css");
+
+:root {
+    --main-purple: rgb(100, 0, 145);
+    --background-purple: rgba(100, 0, 145, 0.5);
+    --dark-purple: rgb(20, 0, 20);
+    --link-white: rgb(220, 150, 255);
+    --ff: "Maple Mono NF CN", monospace;
+}
+
+body {
+    /* Font and text details */
+    font-family: var(--ff);
+    font-weight: normal;
+    font-size: 12pt;
+    color: white;
+
+    /* Background animation */
+    background-color: var(--dark-purple);
+    background-image: linear-gradient(45deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%),
+        linear-gradient(135deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%);
+    background-size: 55px 55px;
+    animation: moveBg 4s linear infinite;
+
+    padding-left: 30%;
+    padding-right: 30%;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+#content {
+    position: relative;
+}
+
+div#content main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+fieldset {
+    background-color: var(--dark-purple);
+    border: 2px solid var(--main-purple);
+    border-radius: 10px;
+    padding: 1em;
+    display: grid;
+}
+
+input,
+select {
+    font-family: var(--ff);
+
+    margin-bottom: 0.5em;
+
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 5px;
+    background: rgb(25, 25, 25);
+    color: white
+}
+
+input[type=submit] {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    font-family: var(--ff);
+}
+
+.back {
+    background: none;
+    border: 0;
+
+    font-family: var(--ff);
+    font-weight: normal;
+    font-size: 12pt;
+    color: white;
+}
+
+@keyframes moveBg {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 55px 55px;
+    }
+}
+
+@media (max-width: 1600px) {
+    body {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 0;
+        font-size: 11pt;
+    }
+
+    #content {
+        margin: 0;
+        border-radius: 0;
+        height: 100vh;
+    }
+}
+
+a {
+    color: var(--link-white);
+
+    transition: ease-in-out 0.2s;
+}
+
+a:hover {
+    color: white;
+}
+
+code:not(pre > code) {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 12pt;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 5px;
+    background: rgb(25, 25, 25);
+    line-height: 1.4em;
+}
