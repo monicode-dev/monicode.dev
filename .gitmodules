@@ -1,3 +1,0 @@
-[submodule "api"]
-	path = api
-	url = https://github.com/monicode-dev/api.monicode.dev.git
