@@ -1,0 +1,22 @@
+{
+    "tasks": {
+        "dev": "deno run --watch main.ts",
+        "run": "deno run --allow-env --allow-read --allow-sys --allow-ffi --allow-write --allow-net index.ts"
+    },
+    "imports": {
+        "@types/express": "npm:@types/express@^5.0.3",
+        "body-parser": "npm:body-parser@^2.2.0",
+        "dayjs": "npm:dayjs@^1.11.18",
+        "dotenv": "npm:dotenv@^17.2.3",
+        "express": "npm:express@^5.1.0",
+        "express-handlebars": "npm:express-handlebars@^8.0.3",
+        "sequelize": "npm:sequelize@^6.37.7",
+        "sqlite3": "npm:sqlite3@^5.1.7"
+    },
+    "nodeModulesDir": "auto",
+    "fmt": {
+        "exclude": ["static/css/blog-page.css", "static/js/prism.js", "static/images"],
+        "indentWidth": 4,
+        "lineWidth": 160
+    }
+}

@@ -1,127 +1,128 @@
 @import url("https://fontsapi.zeoseven.com/442/main/result.css");
 
 :root {
-  --main-purple: rgb(100, 0, 145);
-  --background-purple: rgba(100, 0, 145, 0.5);
-  --dark-purple: rgb(20, 0, 20);
-  --link-white: rgb(220, 150, 255);
-  --ff: "Maple Mono NF CN", monospace;
-  --feat: "calt", "cv01", "cv32", "cv33", "cv34", "cv35", "cv36", "cv37", "cv64", "cv97", "ss01", "ss02", "ss05";
+    --main-purple: rgb(100, 0, 145);
+    --background-purple: rgba(100, 0, 145, 0.5);
+    --dark-purple: rgb(20, 0, 20);
+    --link-white: rgb(220, 150, 255);
+    --ff: "Maple Mono NF CN", monospace;
+    --feat: "calt", "cv01", "cv32", "cv33", "cv34", "cv35", "cv36", "cv37", "cv64", "cv97", "ss01", "ss02", "ss05";
 }
 
 body {
-  /* Font and text details */
-  font-family: var(--ff);
-  font-weight: normal;
-  font-feature-settings: var(--feat);
-  font-size: 12pt;
-  color: white;
+    /* Font and text details */
+    font-family: var(--ff);
+    font-weight: normal;
+    font-feature-settings: var(--feat);
+    font-size: 12pt;
+    color: white;
 
-  /* Background animation */
-  background-color: var(--dark-purple);
-  background-image: linear-gradient(45deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%),
-    linear-gradient(135deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%);
-  background-size: 55px 55px;
-  animation: moveBg 4s linear infinite;
+    /* Background animation */
+    background-color: var(--dark-purple);
+    background-image:
+        linear-gradient(45deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%),
+        linear-gradient(135deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%);
+    background-size: 55px 55px;
+    animation: moveBg 4s linear infinite;
 
-  padding-left: 30%;
-  padding-right: 30%;
+    padding-left: 30%;
+    padding-right: 30%;
 
-  margin: 0;
+    margin: 0;
 
-  overflow: hidden;
+    overflow: hidden;
 }
 
 #content {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: min-content auto min-content;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto min-content;
 
-  background-color: rgba(20, 0, 20, 0.75);
-  padding: 0% 5% 0% 5%;
+    background-color: rgba(20, 0, 20, 0.75);
+    padding: 0% 5% 0% 5%;
 }
 
 main {
-  overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(100, 0, 145, 0.25);
-  border-radius: 10px;
+    background: rgba(100, 0, 145, 0.25);
+    border-radius: 10px;
 }
 
 @keyframes moveBg {
-  0% {
-    background-position: 0 0;
-  }
+    0% {
+        background-position: 0 0;
+    }
 
-  100% {
-    background-position: 55px 55px;
-  }
+    100% {
+        background-position: 55px 55px;
+    }
 }
 
 @media (max-width: 1600px) {
-  body {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
+    body {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 }
 
 @media (max-width: 1000px) {
-  body {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 @media (max-width: 800px) {
-  body {
-    padding: 0;
-    font-size: 11pt;
-  }
+    body {
+        padding: 0;
+        font-size: 11pt;
+    }
 
-  #content {
-    margin: 0;
-    border-radius: 0;
-    height: 100vh;
-  }
+    #content {
+        margin: 0;
+        border-radius: 0;
+        height: 100vh;
+    }
 }
 
 a {
-  color: var(--link-white);
+    color: var(--link-white);
 
-  transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
 }
 
 a:hover {
-  color: white;
+    color: white;
 }
 
 .so:after {
-  content: 'shoutout'
+    content: "shoutout";
 }
 
 .so:hover:after {
-  content: 'shoruoti'
+    content: "shoruoti";
 }
 
 code:not(pre > code) {
-  font-family: var(--ff);
-  font-feature-settings: var(--feat);
-  font-size: 12pt;
-  border: 2px solid rgb(50, 50, 50);
-  border-radius: 5px;
-  background: rgb(25, 25, 25);
-  line-height: 1.4em;
+    font-family: var(--ff);
+    font-feature-settings: var(--feat);
+    font-size: 12pt;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 5px;
+    background: rgb(25, 25, 25);
+    line-height: 1.4em;
 }

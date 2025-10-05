@@ -3,10 +3,10 @@ let data = {};
 
 function submitRecommend(event) {
     event.preventDefault();
-    let formData = new FormData(form)
-    let category = formData.get("category")
-    formData.delete("category")
-    
+    let formData = new FormData(form);
+    let category = formData.get("category");
+    formData.delete("category");
+
     for (const value of formData) {
         data[value[0]] = value[1];
     }
@@ -21,7 +21,7 @@ function submitRecommend(event) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
-    }).then(_ => window.location.href = "/recommends");
+    }).then((_) => window.location.href = "/recommends");
 }
 
 form.addEventListener("submit", submitRecommend);

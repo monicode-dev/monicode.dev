@@ -1,10 +1,11 @@
-
 # monicode.dev
+
 This is the MoniCode portfolio + blog website code!
 
-# How to clone
+# How to run
+
 ```sh
 git clone https://github.com/monicode-dev/monicode.dev.git
 cd monicode.dev
-git submodule update --init --recursive
+deno task run
 ```

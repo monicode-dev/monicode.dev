@@ -4,9 +4,9 @@ function overflowFix() {
         if (content.scrollHeight > content.clientHeight) {
             content.style.height = "100%";
         } else {
-            content.style.height = "100vh"
+            content.style.height = "100vh";
         }
     }
 }
 
-document.addEventListener("readystatechange", overflowFix)
+document.addEventListener("readystatechange", overflowFix);

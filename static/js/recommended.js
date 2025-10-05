@@ -1,19 +1,15 @@
-let table = document.getElementsByTagName("tbody").item(0);
-let loader = document.getElementsByClassName("loader").item(0);
+const table = document.getElementsByTagName("tbody").item(0);
+const loader = document.getElementsByClassName("loader").item(0);
 
-let pageName = document.getElementsByName("title")[0].content.split("|")[1]
+const pageName = document.getElementsByName("title")[0].content.split("|")[1]
     .trim().toLowerCase();
 
 function fetchData(mode) {
     if (mode == "recommends" || mode == "reviews") {
-        let type = new URLSearchParams(window.location.search).get("type")
-        type = type ? type : "music"
+        let type = new URLSearchParams(window.location.search).get("type");
+        type = type ? type : "music";
         fetch(`/v1/${mode}/` + type)
-            .then((response) => 
-                response.json().then((fetchedData) =>
-                    genTable(fetchedData, mode)
-                ).catch(reason => console.log(reason))
-            );
+            .then((response) => response.json().then((fetchedData) => genTable(fetchedData, mode)).catch((reason) => console.log(reason)));
     } else {
         return;
     }
@@ -21,7 +17,7 @@ function fetchData(mode) {
 
 function genTable(data, mode) {
     let type = new URLSearchParams(window.location.search).get("type");
-    type = type ? type : "music"
+    type = type ? type : "music";
 
     document.getElementById(type).classList.add("active");
 

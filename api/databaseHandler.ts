@@ -1,9 +1,9 @@
-const { Sequelize, TEXT, INTEGER } = require("sequelize");
+import { INTEGER, Sequelize, TEXT } from "sequelize";
 
 const sequelize = new Sequelize({
     dialect: "sqlite",
     storage: "databases/mcd.sqlite",
-    logging: false
+    logging: false,
 });
 
 const recommends = sequelize.define("recommends", {
@@ -13,17 +13,17 @@ const recommends = sequelize.define("recommends", {
     },
     name: {
         type: TEXT,
-        allowNull: false
+        allowNull: false,
     },
     creator: {
         type: TEXT,
-        allowNull: false
+        allowNull: false,
     },
     recommendedBy: {
         type: TEXT,
-        allowNull: false
+        allowNull: false,
     },
-})
+});
 
 const reviews = sequelize.define("reviews", {
     category: {
@@ -32,18 +32,18 @@ const reviews = sequelize.define("reviews", {
     },
     name: {
         type: TEXT,
-        allowNull: false
+        allowNull: false,
     },
     creator: {
         type: TEXT,
-        allowNull: false
+        allowNull: false,
     },
     review: {
         type: INTEGER,
-        allowNull: false
+        allowNull: false,
     },
-})
+});
 
-sequelize.sync()
+sequelize.sync();
 
-module.exports = { sequelize, recommends, reviews }
+export { recommends, reviews, sequelize };

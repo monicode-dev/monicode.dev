@@ -17,7 +17,8 @@ body {
 
     /* Background animation */
     background-color: var(--dark-purple);
-    background-image: linear-gradient(45deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%),
+    background-image:
+        linear-gradient(45deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%),
         linear-gradient(135deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%);
     background-size: 55px 55px;
     animation: moveBg 4s linear infinite;
@@ -60,10 +61,10 @@ select {
     border: 2px solid rgb(50, 50, 50);
     border-radius: 5px;
     background: rgb(25, 25, 25);
-    color: white
+    color: white;
 }
 
-input[type=submit] {
+input[type="submit"] {
     margin-top: 1.5em;
     margin-bottom: 0;
     font-family: var(--ff);
