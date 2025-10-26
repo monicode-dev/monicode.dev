@@ -49,15 +49,15 @@
 }
 
 .tools .svg {
-    padding-right: 5px;
     padding-bottom: 5px;
     vertical-align: middle;
     height: 1em;
 }
 
 .pin {
-    vertical-align: text-bottom;
-    height: 1.1em;
+    padding-bottom: 5px;
+    vertical-align: middle;
+    height: 1em;
 }
 
 @media (max-width: 800px) {
