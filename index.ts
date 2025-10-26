@@ -10,6 +10,14 @@ dayjs.extend(utc);
 
 const app = express();
 
+const logDate = dayjs().utcOffset(0, false);
+Deno.env.set("LOG_FILE", logDate.format("MM-DD-YYYY") + ".log")
+try {
+    Deno.mkdirSync("logs")
+} catch {
+    console.log("Logs folder already made!");
+}
+
 const hbs = handlebars.create({
     extname: ".hbs",
     helpers: {
@@ -27,7 +35,11 @@ app.use((req, _res, next) => {
     const date = dayjs().utcOffset(0, false);
     const dateFormated = date.format("MM/DD/YYYY @ HH:mm");
 
-    console.log(`[${dateFormated} UTC] ${req.method}: ${req.path}`);
+    const logLine = `[${dateFormated} UTC] [${req.ip}] ${req.method}: ${req.path}`
+
+    Deno.writeTextFileSync("logs/" + Deno.env.get("LOG_FILE"), logLine + "\n", { append: true })
+
+    console.log(logLine);
     next();
 });
 
