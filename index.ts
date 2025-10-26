@@ -34,8 +34,6 @@ app.use((req, _res, next) => {
 app.use(bodyParser.json());
 app.use(express.static(import.meta.dirname + "/static"));
 
-app.use("/", express.static(import.meta.dirname + "/static"));
-
 app.get("/", (_req, res) => {
     res.render("home", {
         pageName: "Home",
@@ -76,13 +74,6 @@ app.get("/projects", (_req, res) => {
     res.render("projects", {
         pageName: "Projects",
         pageId: "projects",
-    });
-});
-
-app.get("/recommends", (_req, res) => {
-    res.render("recommends", {
-        pageName: "Recommends",
-        pageId: "recommends",
     });
 });
 
