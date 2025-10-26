@@ -6,9 +6,6 @@ import bodyParser from "body-parser";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc.js";
 
-import dotenv from "dotenv";
-dotenv.config({ quiet: true });
-
 dayjs.extend(utc);
 
 const app = express();
@@ -37,9 +34,7 @@ app.use((req, _res, next) => {
 app.use(bodyParser.json());
 app.use(express.static(import.meta.dirname + "/static"));
 
-app.use("/css", express.static(import.meta.dirname + "/static/css"));
-app.use("/js", express.static(import.meta.dirname + "/static/js"));
-app.use("/images", express.static(import.meta.dirname + "/static/images"));
+app.use("/", express.static(import.meta.dirname + "/static"));
 
 app.get("/", (_req, res) => {
     res.render("home", {
