@@ -35,7 +35,7 @@ app.use((req, _res, next) => {
     const date = dayjs().utcOffset(0, false);
     const dateFormated = date.format("MM/DD/YYYY @ HH:mm");
 
-    const logLine = `[${dateFormated} UTC] [${req.ip}] ${req.method}: ${req.path}`
+    const logLine = `[${dateFormated} UTC] ${req.method}: ${req.path}`
 
     Deno.writeTextFileSync("logs/" + Deno.env.get("LOG_FILE"), logLine + "\n", { append: true })
 
