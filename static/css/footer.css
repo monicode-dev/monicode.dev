@@ -4,3 +4,20 @@ footer {
 
     margin-bottom: 1%;
 }
+
+footer button {
+    font-family: var(--ff);
+    font-weight: normal;
+    font-feature-settings: var(--feat);
+    font-size: 12pt;
+
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0);
+    color: gray;
+}
+
+footer button:hover {
+    border: 2px solid rgb(40, 40, 40);
+    background: rgb(15, 15, 15);
+}

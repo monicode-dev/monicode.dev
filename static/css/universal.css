@@ -23,7 +23,6 @@ body {
         linear-gradient(45deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%),
         linear-gradient(135deg, transparent 24%, var(--background-purple) 25% 26%, transparent 27% 74%, var(--background-purple) 75% 76%, transparent 77%);
     background-size: 55px 55px;
-    animation: moveBg 4s linear infinite;
 
     padding-left: 30%;
     padding-right: 30%;
@@ -60,6 +59,10 @@ main {
 ::-webkit-scrollbar-thumb {
     background: rgba(100, 0, 145, 0.25);
     border-radius: 10px;
+}
+
+.animated {
+    animation: moveBg 4s linear infinite;
 }
 
 @keyframes moveBg {

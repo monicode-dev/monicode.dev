@@ -1,0 +1,8 @@
+@font-face {
+  font-family: SamsungSans; /* set name */
+  src: url(/font/samsungsans.ttf); /* url of the font */
+}
+
+.one-ui {
+    font-family: SamsungSans;
+}
