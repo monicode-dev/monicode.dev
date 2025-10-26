@@ -3,8 +3,6 @@ import express from "express";
 import handlebars from "express-handlebars";
 import bodyParser from "body-parser";
 
-import v1 from "./api/v1.ts";
-
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc.js";
 
@@ -42,8 +40,6 @@ app.use(express.static(import.meta.dirname + "/static"));
 app.use("/css", express.static(import.meta.dirname + "/static/css"));
 app.use("/js", express.static(import.meta.dirname + "/static/js"));
 app.use("/images", express.static(import.meta.dirname + "/static/images"));
-
-app.use("/v1", v1);
 
 app.get("/", (_req, res) => {
     res.render("home", {
@@ -92,30 +88,6 @@ app.get("/recommends", (_req, res) => {
     res.render("recommends", {
         pageName: "Recommends",
         pageId: "recommends",
-    });
-});
-
-app.get("/rec-form", (req, res) => {
-    if (req.query["category"] != undefined) {
-        if (req.query["yourName"] == "") {
-            req.query["yourName"] = "Anonymous";
-        }
-        console.log(req.query["yourName"] == "");
-
-        res.send(req.query);
-    } else {
-        res.render("rec-form", {
-            pageName: "Recommendation Form",
-            pageId: "rec-form",
-            layout: "form",
-        });
-    }
-});
-
-app.get("/reviews", (_req, res) => {
-    res.render("reviews", {
-        pageName: "Reviews",
-        pageId: "reviews",
     });
 });
 
