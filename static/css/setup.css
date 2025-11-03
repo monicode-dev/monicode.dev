@@ -7,3 +7,8 @@
     font-family: SamsungSans;
     color: black;
 }
+
+.logo {
+    width: 20px;
+    vertical-align: middle;
+}
