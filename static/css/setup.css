@@ -1,14 +1,20 @@
 @font-face {
-  font-family: SamsungSans; /* set name */
-  src: url(/font/samsungsans.ttf); /* url of the font */
+  font-family: SamsungSans;
+  src: url(/font/samsungsans.ttf);
 }
 
 .one-ui {
-    font-family: SamsungSans;
-    color: black;
+  font-family: SamsungSans;
+  color: black;
 }
 
 .logo {
-    width: 20px;
-    vertical-align: middle;
+  width: 20px;
+  vertical-align: middle;
+  filter: brightness(75%);
+  transition: ease-in-out 0.2s;
+}
+
+.logo:hover {
+  filter: brightness(100%);
 }

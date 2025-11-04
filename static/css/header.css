@@ -38,13 +38,6 @@ nav a:hover {
     width: 20px;
     vertical-align: middle;
 
-    transition: ease-in-out 0.2s;
-}
-
-.svg {
-    width: 20px;
-    vertical-align: middle;
-
     filter: invert(75%);
     transition: ease-in-out 0.2s;
 }
